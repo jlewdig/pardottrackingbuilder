@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracking Builder</title>
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+    <h1>Tracking URL Builder for Pardot</h1>
+    <form id="utmForm">
+        <label for="campaignName">Campaign Name:</label>
+        <select id="campaignName" name="campaignName">
+            <option value="arcadian-grove">arcadian-grove</option>
+            <option value="ara-hills">ara-hills</option>
+            <option value="arbor">arbor</option>
+            <option value="arcadian-hills">arcadian-hills</option>
+            <option value="argyle">argyle</option>
+            <option value="aspect-mernda">aspect-mernda</option>
+            <option value="cadence">cadence</option>
+            <option value="creekwood">creekwood</option>
+            <option value="deebing-springs">deebing-springs</option>
+            <option value="evergreen">evergreen</option>
+            <option value="eyre">eyre</option>
+            <option value="harvest-square">harvest-square</option>
+            <option value="lyndarum-north">lyndarum-north</option>
+            <option value="national">national</option>
+            <option value="parkside">parkside</option>
+            <option value="pro9">pro9</option>
+            <option value="riverton">riverton</option>
+            <option value="rosella-rise">rosella-rise</option>
+            <option value="somerford">somerford</option>
+            <option value="st-clair">st-clair</option>
+            <option value="stellar">stellar</option>
+            <option value="turnkey">turnkey</option>
+            <option value="waterline-place">waterline-place</option>
+        </select><br><br>
+
+        <label for="url">URL to Track:</label>
+        <input type="text" id="url" name="url"><br><br>
+
+        <label for="emailName">Email Name i.e. Lyndarum Christmas invite:</label>
+        <input type="text" id="emailName" name="emailName"><br><br>
+
+        <input type="button" value="Generate Tracking URL" onclick="generateUTM()">
+    </form>
+
+    <p>Tracking URL:</p>
+    <textarea id="generatedUrl" rows="4" cols="50"></textarea>
+    <input type="button" value="Copy URL" onclick="copyToClipboard()" style="background-color: #28a745; color: white;">
+
+  
+    
+    <script>
+        // JavaScript code will go here
+    </script>
+</body>
+</html>
