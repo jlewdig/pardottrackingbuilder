@@ -3,7 +3,7 @@ function generateUTM() {
     var url = document.getElementById('url').value;
     var emailName = 'email-' + document.getElementById('emailName').value.replace(/\s+/g, '-').toLowerCase();
 
-    var utmUrl = url + '?utm_source=pardot-salesforce-marketing-cloud' +
+    var utmUrl = url + '?utm_source=pardot' +
                  '&utm_medium=email&utm_campaign=' + encodeURIComponent(campaignName) +
                  '&utm_content=' + encodeURIComponent(emailName);
 
